@@ -35,6 +35,7 @@ switch ($userChoice) {
 							break;
 					
 					}
+					
 					break;
 				case 'scissor':
 					switch ($pcChoice) {
@@ -60,8 +61,9 @@ switch ($userChoice) {
 							$hidePCRock = 'hidden';
 							$hidePCPaper = 'hidden';
 							break;
-
+					
 					}
+					
 					break;
 				case 'paper':
 					switch ($pcChoice) {
@@ -89,24 +91,13 @@ switch ($userChoice) {
 							break;
 					
 					}
+					
 					break;
 			}
 
 
 
 
-
-switch ($userChoice) {
-	case 'rock':
-		
-		break;
-	case 'scissor':
-		
-		break;	
-	default:
-		
-		break;
-}
 
 
 
