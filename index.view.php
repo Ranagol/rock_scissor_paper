@@ -15,6 +15,11 @@
 
 	<div class="d-flex flex-row justify-content-around">You:5   Pc:2</div>
 	<div class="d-flex flex-row justify-content-around">
+		<form method="GET" action="index1.php">
+			<button class="btn btn-success" type="submit" name="reset" value="reset">Want to play again?</button>
+		</form>
+	</div>
+	<div class="d-flex flex-row justify-content-around">
 		<?php include 'switch.php'; ?>
 	</div>
 	<div class="row">
@@ -23,26 +28,29 @@
 
 		<div class="col">
 			<form method="POST" action="index1.php">
-				<button class="btn btn-success" type="submit" name="userrock" value="rock"><i class="far fa-hand-rock iconsize"></i></button>
+				<button <?php echo $hideUserRock; ?> class="btn btn-success" type="submit" name="userrock" value="rock"><i class="far fa-hand-rock iconsize"></i></button>
 			</form>
 		</div>
 
 		<div class="col">
 			<form method="POST" action="index1.php">
-				<button class="btn btn-success"  type="submit" name="userscissor" value="scissor"><i class="far fa-hand-scissors iconsize"></i></button>
+				<button <?php echo $hideUserScissor; ?> class="btn btn-success"  type="submit" name="userscissor" value="scissor"><i class="far fa-hand-scissors iconsize"></i></button>
 			</form>
 		</div>
 		<div class="col">
 			<form method="POST" action="index1.php">
-				<button class="btn btn-success"  type="submit" name="userpaper" value="paper"><i class="far fa-hand-paper  iconsize"></i></button>
+				<button <?php echo $hideUserPaper; ?> class="btn btn-success"  type="submit" name="userpaper" value="paper"><i class="far fa-hand-paper  iconsize"></i></button>
 			</form>
 		</div>
 	</div>
+
+
+
 	<div class="row">
 		<div class="col"><i class="fas fa-robot robotsize"></i></div>
-		<div class="col"><i class="far fa-hand-rock iconsize"></i></div>
-		<div class="col"><i class="far fa-hand-scissors iconsize"></i></div>
-		<div class="col"><i class="far fa-hand-paper iconsize"></i></div>
+		<div class="col"><i <?php echo $hidePCRock; ?> class="far fa-hand-rock iconsize"></i></div>
+		<div class="col"><i <?php echo $hidePCScissor; ?> class="far fa-hand-scissors iconsize"></i></div>
+		<div class="col"><i <?php echo $hidePCPaper; ?> class="far fa-hand-paper iconsize"></i></div>
 	</div>
 </div>
 

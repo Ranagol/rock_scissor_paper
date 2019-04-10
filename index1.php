@@ -14,8 +14,6 @@ echo '<br> userChoice is: ' . $userChoice . '<br>';
 
 
 
-	
-
 
 include 'index.view.php';
 ?>
