@@ -14,22 +14,33 @@
 
 <div class="container mt-5">
 
-	<h3 class="d-flex justify-content-around fontstyle">ROCK SCISSOR PAPER</h3>
-	
-	<div   class="d-flex flex-row justify-content-around mt-5">	
-		<form method="GET" action="index.php">			
-			<button <?php echo $playAgain; ?>  <?php echo $hideResults; ?> class="btn btn-success fontstyle" type="submit" name="reset" value="reset">PLAY AGAIN?</button><!-- THIS IS THE "PLAY AGAIN" DISPLAY---------------------->
-		</form>
-		<form method="POST" action="">			
-			<button <?php echo $playAgain; ?> <?php echo $hideResults; ?> class="btn btn-danger fontstyle" type="submit" name="resetResults" value="resetResults">RESET WINS?</button><!-- THIS IS THE "RESET" DISPLAY---------------------->
-		</form>	
+	<div class="row">
+		<div class="col d-flex justify-content-around">
+			<form method="GET" action="index.php">			
+				<button <?php echo $playAgain; ?>  <?php echo $hideResults; ?> class="btn btn-success fontstyle" type="submit" name="reset" value="reset">PLAY AGAIN?</button><!-- THIS IS THE "PLAY AGAIN" DISPLAY---------------------->
+			</form>
+		</div>
+
+		<div class="col">
+			<h3 class="d-flex justify-content-around fontstyle">ROCK SCISSOR PAPER</h3>
+		</div>
+
+		<div class="col d-flex justify-content-around">
+			<form method="POST" action="">			
+				<button <?php echo $playAgain; ?> <?php echo $hideResults; ?> class="btn btn-danger fontstyle" type="submit" name="resetResults" value="resetResults">RESET WINS?</button><!-- THIS IS THE "RESET" DISPLAY---------------------->
+			</form>	
+		</div>
 	</div>
+
 	
-	<div class="d-flex flex-row justify-content-around fontstyle">
+	
+	
+	
+	<div class="d-flex flex-row justify-content-around fontstyle card border-white" style="height: 50px;">
 		<?php include 'switch.php'; ?> <!-- THIS IS THE "YOU WON" DISPLAY -------------------------------->
 	</div>
 	
-	<div class="row pb-5"><!-- THIS IS THE USER ROW ------------------------------------------------------->
+	<div class="row pb-2"><!-- THIS IS THE USER ROW ------------------------------------------------------->
 		<div class="col"><i class="far fa-user usersize"></i></div>
 
 		<div class="col">
